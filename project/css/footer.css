@@ -1,0 +1,39 @@
+.base{
+    /* width:100%; */
+    height:610px;
+    /* border:1px solid #f00; */
+    background:#fff;
+    margin:75px 331px 0px;
+    text-align: center;
+    min-width:992px;
+} 
+.top_hr{
+    margin:30px 0;
+    
+}
+/* 上面一行 */
+.base_int{
+    display:flex;
+    flex-wrap:wrap;
+}
+/* 下面一行 */
+.base_int1{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+/* 每个框的指定宽高 */
+.base .under_la{
+ width:25%;
+ height:280px;
+ justify-content:center;
+}
+.base .base_xia{
+    margin: 0 0 20px;
+}
+a{
+    color:#000;
+    font-size:18px;
+}
+
+

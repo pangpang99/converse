@@ -1,0 +1,163 @@
+.log_bg{background:#fff;}
+.log_in{
+    box-sizing:border-box;
+    position: relative;
+    width:1000px;
+    /* height:317px; */
+    height:400px;  
+    /* border:1px  solid #f00;  */
+    margin:0 auto;
+    padding:30px 0 0 0;
+    background:#fff;
+    
+}
+/* 给父元素设置弹性 */
+.log_in_top_t{
+    display:flex;
+}
+/* 整个页面的宽 */
+.log_in_top{
+    width:1000px;
+    height:95px;
+    /* border:1px solid #000; */
+}
+.log_in_top_t li{
+    width:300px;
+     height:95px; 
+}
+.log_in_top_t li:first-child{
+    margin: 0 50px 0 0;
+}
+.log_in_top_t li:nth-child(2){
+    margin: 0 50px 0 0;
+}
+/* input的尺寸 */
+.log_in_top_t input{
+    width:260px;
+    height:26px;
+    padding:5px 5px 5px 18px;
+    margin: 10px 0 25px 0;
+}
+.log_in_top_t>.li_c input{
+    width:50px;height:20px;
+    margin:0 auto;
+    vertical-align: middle
+}
+/* 男女的浮动 */
+.log_in_top_t .li_c .div_class{
+    float:left; margin: 10px 20px 0 0;
+}
+.log_in_top_t .li_c .div_class:after{
+    content:"";display:block;clear:both;
+}
+.zc_danxuan{
+    height: 40px;
+    line-height: 40px;
+    cursor:pointer;
+}
+/* 男女打勾勾的 */
+.log_in_top_t>.li_c input{
+    width:0;
+}
+.zc_danxuan::before{
+    content:"";
+    display:block;
+    width:15px;height:15px;
+    border:2px solid #000;
+    position:absolute;
+    top:11px;left:0;
+}
+.log_in_top_t>.li_c input:checked+.zc_danxuan::after{
+    content:"";
+    position:absolute;
+    left:5px;top:16px;
+    width:8px;height:4px;
+    border-bottom:2px solid #000;
+    border-left:2px solid #000;
+    transform: rotate(-45deg);
+}
+.div_class{
+    padding-left:25px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+.div_class input{
+    cursor:pointer;
+}
+
+/* *号的颜色 */
+.log_in_top_t b{
+    color:red;
+}
+/* 短信验证码框的长度 */
+.log_in_top_t .span_xin{
+    border:1px solid #848484;
+    display:inline-block;
+    width:140px;height:40px;background:#848484;color:#fff;
+    line-height:40px;
+    text-align:center;
+}
+.log_in_top_t .input_fan{
+    width:100px;height:26px;
+    margin:10px 10px 25px 0;
+}
+.log_in_top_t span{
+    cursor:pointer;
+    font-size:10px;color:#333333;
+}
+.di_ji{
+    cursor:pointer;
+}
+.zu_fanli{
+    font-size:10px;
+}
+.zu_fanli>.you_a{
+    text-decoration:underline;
+    color:#000;
+    font-size:10px !important;
+}
+
+
+/* 更多边框加背景图片转换 */
+.gen_duo{
+    width:300px;height:40px;
+    border:1px solid #000;
+    background:#000;
+    color:#fff;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+    cursor:pointer;
+    margin:10px 0 0 !important;
+}
+.gen_duo:hover{background:#fff !important;}
+.gen_duo:hover .gen_duo_d>a{color:#000 !important;}
+
+.gen_duo_d>a{
+    display:inline-block;
+    font-size:20px !important;
+    line-height:40px; 
+    color:#fff !important;
+}
+.gen_duo_d>a::after{
+    content: "";
+    float:right;
+    margin-top:5px;
+    width:20px;height:31px;
+    background: url(../img/images/commons/sprites_header_footer.png) no-repeat -6px -160px;  
+}
+.gen_duo:hover .gen_duo_d>a::after{
+    background-position:-38px -162px;
+    transition:0.5s;
+}
+
+
+
+
+
+
+
+
+
+

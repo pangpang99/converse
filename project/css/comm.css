@@ -1,0 +1,132 @@
+/*清0*/
+*{
+    margin:0;padding:0;
+    list-style:none;text-decoration:none;
+    
+  }
+  img{
+   vertical-align: middle;
+  }
+  /*通用的字体颜色
+  白色字体 登录注册那样的*/
+  .my_small{color:#fff;
+   font-size:12px;
+  }
+  .my_weizi{font-size:12px;}
+  /* .wrapper{height:100%;width:100%; */
+  
+
+.my_smallb{color:#fff ;}
+  /* 第二条导航栏男的女的那样的 */
+.my_weizib{font-size:24px;}
+/*黑色字体*/
+/* .my_smallc{color:#000;}
+.my_smallf{color:#000;} */
+/* 字体加粗 */
+.my_smallc{font-size:24px;font-weight:500;}
+.my_smalld{font-size:12px;}
+.my_smalld{font-weight:600;}
+/* p标签的字体大小13px */
+.wei_zi15px{
+  font-size:13px;
+  color:#000;
+}
+.wei_zi15px{
+  font-weight:bold;
+}
+
+/* p标签的字体大小12px */
+.wei_zi12px{
+  
+    font-size:10px;
+}
+.wei_zi13px{
+  font-size:13px;
+}
+.width_100{
+  width:100%;
+}
+.wei_zicolor{
+  color:#000;
+}
+
+
+
+/* 首页接头部样式 */
+/* #d3{
+  height:210px;
+  position:fixed;
+  z-index:10;
+}
+
+/* {
+  height:750px;
+  overflow: hidden;
+} */
+/* 接尾部样式 */
+/* .footer iframe{
+  height:195px;
+  overflow: hidden;
+} */ 
+
+
+
+ /* 商品列表头部 */
+#d1{
+  height:210px;
+  position:fixed;
+  z-index:30;
+}
+/* 商品列表尾部 */
+#d2>iframe{
+  height:195px;
+  overflow: hidden;
+}
+/* 购物车样式 */
+.zi_13px{
+  font-size:13px;
+  color:#000;
+}
+.zi_13PX{
+  font-size:13px;
+  font-weight:bold;
+}
+.zi_10px{
+  font-size:10px;
+  color:#000;
+}
+
+/* 更多 边框加背景图片转换 */
+.gen_duo{
+  width:300px;height:40px;
+  border:1px solid #000;
+  background:#000;
+  color:#fff;
+  font-size:20px;
+  text-align:center;
+  line-height:40px;
+  cursor:pointer;
+  margin:10px 0 0;
+}
+.gen_duo:hover{background:#fff !important;}
+.gen_duo:hover .gen_duo_d>a{color:#000 !important;}
+
+.gen_duo_d>a{
+  display:inline-block;
+  font-size:20px !important;
+  line-height:40px; 
+  color:#fff !important;
+}
+.gen_duo_d>a::after{
+  content: "";
+  float:right;
+  margin-top:5px;
+  width:20px;height:31px;
+  background: url(../img/images/commons/sprites_header_footer.png) no-repeat -6px -160px;  
+}
+.gen_duo:hover .gen_duo_d>a::after{
+  background-position:-38px -162px;
+  transition:0.5s;
+}
+
+

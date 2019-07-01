@@ -1,0 +1,119 @@
+/* 男的商品列表的标题 */
+.boy_list{
+    width:1000px;
+    /* border:1px solid #000; */
+    margin:40px 331px 45px;
+    position: relative;
+}
+/* 商品列表的标题居中 */
+.boy_list>h2{
+    width:265px;
+    height:31px;
+    text-align:center;
+    margin:12px auto;
+    position: relative;
+    background:#fff;
+    z-index:20;
+}
+ .boy_list>.xiahua{
+    width:800px;
+    border-top:1px solid #b7b7b7;
+    position: absolute;
+    top:19px;
+    left:109px;
+} 
+
+.list_c_l{
+    min-width:1300px;
+    height:auto;
+    /* border:1px solid #000; */
+    margin:0 auto;
+}
+/* 左边的导航栏 */
+.list_left_dao{
+    /* border:1px solid #000; */
+    float:left;
+    width:255px;
+    height:auto;
+    padding:0 30px 0 200px ;
+}
+.list_left_dao::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.list_left_dao>div{
+    width:221px;
+    height:81px;
+    border:1px solid #b7b7b7;
+    font-size:22px;
+    font-weight:lighter;
+    margin:20px 0 40px;
+    padding:0 15px 0 18px;
+}
+/* 左边导航栏字体 */
+.list_left_li>li{
+margin:12px 22px 0px 12px;
+padding:7px 5px;
+font-weight:bold ;
+font-size:21px;
+color:#333333;
+}
+/* 主体商品部分 */
+
+.list_center_top{
+    /* width:750px; */
+    height:auto;
+    box-sizing:border-box;
+}
+.list_center_top .list_pan{
+   display:flex; 
+   width:750px;
+}
+.list_pan{
+    padding:20px 0 30px 50px;
+}
+.list_pan> li+li{
+    border:1px solid #cccccc;
+    padding:3px 15px 3px 15px;
+    font-size:12px;
+    cursor:pointer;
+    
+}
+.list_pan>li:nth-child(2){
+    background:#000;
+    color:#fff;
+}
+.list_pan>li:first-child{
+    margin:3px 15px;
+    font-size:14px;
+}
+.boy_list_xia .boy_list_top{
+    display:flex;
+    flex-wrap:wrap;
+    width:750px;
+}
+
+/* 每个商品的大小尺寸  */
+.boy_list_top>li{
+    width:249px;
+    height:300px;
+    text-align:center;
+}
+.boy_list_top> li>p{
+    margin: 0 0 20px;
+    font-size:15px;
+}
+.boy_list_top >li:hover{
+  border:1px solid #b7b7b7;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
