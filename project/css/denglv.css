@@ -1,1 +1,38 @@
-/* 来了老弟 */
+/* 登录页面的整个div 使用了弹性 */
+.zh_out{
+    width:1000px;
+    height:317px;
+    border:1px solid #000;
+    display:flex;
+    margin:0 auto;
+    padding:40px 0;
+    justify-content:space-between; 
+}
+/* .zh_out dl{width:30%;} */
+.zh_out dt{
+    font-size:25px;
+    margin:0 0 20px;
+}
+/* 注册账户的重写样式 */
+.gen_duo{
+    width:150px;height:40px;
+}
+/* 你可以直接登录的样式 */
+.ce_center{
+    width:30%;
+    padding: 0 60px;
+    margin:0 60px;
+    border-left:1px solid #999999;
+    border-right:1px solid #999999;
+    position: relative;
+
+}
+.ce_center dd{
+    width:40px;height:40px;
+    background:red;
+    float:left;
+    margin:0 12px 0 0;
+}
+.ce_center:dd-child(1){
+    background:url(../)
+}
