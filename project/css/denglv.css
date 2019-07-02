@@ -1,5 +1,6 @@
 /* 登录页面的整个div 使用了弹性 */
 .zh_out{
+    box-sizing:border-box;
     width:1000px;
     height:317px;
     border:1px solid #000;
@@ -29,10 +30,21 @@
 }
 .ce_center dd{
     width:40px;height:40px;
-    background:red;
+    /* background:red; */
     float:left;
-    margin:0 12px 0 0;
+    background:url(../img/images/commons/shareimg.png) no-repeat 0px -239px;
 }
-.ce_center:dd-child(1){
-    background:url(../)
+
+.ce_center dd:nth-child(2){
+    background:url(../img/images/commons/shareimg.png) no-repeat;
+    margin:0 12px 12px 0;
 }
+.ce_right{
+    width:300px;height:337px;
+}
+.ce_right dd input{
+    width:274px;height:28px;
+    margin:0 0 12px 0;
+    padding:5px 5px 5px 16px;
+}
+
