@@ -526,12 +526,61 @@ margin-top:50px;
 /* 鼠标悬停时出现的边框 */
 .list_body_top2>div{box-sizing: border-box;}
 .list_body_top2>div:hover{border: 1px solid #ddd;}
-/* <!-- 查看更多商品 --> */
-.gen_duo{
-    margin:0 auto !important;
-    width:420px;height:48px !important;
-    line-height:48px !important;
-}
+/* <!-- 查看更多所有更多商品 --> */
+
+.gen_duo1{
+    width:300px;height:40px;
+    border:1px solid #000;
+    background:#000;
+    color:#fff;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+    cursor:pointer;
+    /* margin:10px 0 0; */
+    margin:0 auto;
+  }
+  .gen_duo1:hover{background:#fff !important;}
+  .gen_duo1:hover .gen_duo_d1>a{color:#000 !important;}
+  
+  .gen_duo_d1>a{
+    display:inline-block;
+    font-size:20px !important;
+    line-height:40px; 
+    color:#fff !important;
+  }
+  .gen_duo_d1>a::after{
+    content: "";
+    float:right;
+    margin-top:5px;
+    width:20px;height:31px;
+    background: url(../img/images/commons/sprites_header_footer.png) no-repeat -6px -160px;  
+  }
+  .gen_duo1:hover .gen_duo_d1>a::after{
+    background-position:-38px -162px;
+    transition:0.5s;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .list_list1_bottom{
     width:420px;
     height:48px;
