@@ -112,6 +112,12 @@
 .zu_fanli{
     font-size:10px;
 }
+/* 法律和使用规则的a */
+.zu_fanli a{
+    color:#000;
+    cursor: pointer;
+    text-decoration:underline;
+}
 .zu_fanli>.you_a{
     text-decoration:underline;
     color:#000;
