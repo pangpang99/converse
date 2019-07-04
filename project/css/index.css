@@ -733,7 +733,7 @@ margin-top:50px;
     left:-67px;
 }
 
-.list_class_top_l,.list_class_top_r{
+.list_class_top_l{
     width:488px;
     height:552px;
 }
@@ -745,20 +745,20 @@ margin-top:50px;
 .list_class_top_l p{
     cursor:pointer;
 }
-.list_class_top_r>h2{
+/* .list_class_top_r>h2{
     margin:12px 0;
     cursor: pointer;
 }
 .list_class_top_r p{
     cursor:pointer;
-}
+} */
 
 /* 商品浮动 */
-.list_rl_class> div{
+.list_rl_class>div{
     float:left;
 }
 /* 清除浮动 */
-.list_rl_class> div:after{
+.list_rl_class>div:after{
     content:"";
 	display:block;
 	clear:both;
@@ -794,9 +794,46 @@ margin-top:50px;
 }
 
 /* 小手 */
-/* .list_class .list_rl_class>div>a> h2:hover{
+.list_class .list_rl_class>div>a> h2:hover{
     text-decoration:underline;
+}
+.list_class_top_l:nth-child(2){
+    margin:0 0 0 22px;
+}
+/* hover后图片变暗 */
+.list_class_top_l a{
+    position: relative;
+    display: inline-block;
+    /* width:488px;
+    height: 366px; */
+}
+/* .list_class_top_l a .mask{
+  display: none;
+  width:100%;height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.list_class_top_l a:hover .mask{
+    display: inline-block;
+    background-color:#000;
+    opacity:.5;
 } */
+.list_class_top_l a::after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.list_class_top_l a:hover::after {
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+}
+
+
 
 
 
@@ -813,7 +850,7 @@ margin-top:50px;
 .list_class_bottom> .list_logo_img_b{
     width:1000px;
     height:40px;
-    border:1px solid #000;
+    border:1px solid #464646;
     background:#464646; 
     box-sizing:border-box;
 }
