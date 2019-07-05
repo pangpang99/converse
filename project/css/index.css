@@ -800,8 +800,8 @@ margin-top:50px;
 .list_class_top_l:nth-child(2){
     margin:0 0 0 22px;
 }
-/* hover后图片变暗 */
-.list_class_top_l a{
+/*两个一个图片 hover后图片变暗 */
+.list_class_top_l .img_bian{
     position: relative;
     display: inline-block;
     /* width:488px;
@@ -819,7 +819,7 @@ margin-top:50px;
     background-color:#000;
     opacity:.5;
 } */
-.list_class_top_l a::after{
+.list_class_top_l .img_bian::after{
     content: "";
     display: block;
     height: 100%;
@@ -828,13 +828,25 @@ margin-top:50px;
     top:0;
     left: 0;
 }
-.list_class_top_l a:hover::after {
+.list_class_top_l .img_bian:hover::after {
     display: inline-block;
     background: rgba(0,0,0,0.5);
 }
-
-
-
+/* 三个一行图片 hover后图片变暗 */
+.list_class_bottom_l .a_bian{
+   position: relative;
+ display:inline-block;
+}
+.list_class_bottom_l .a_bian::after{
+    content:"";
+    display:block;
+    height:100%;width:100%;
+    position: absolute;top:0;left:0;
+}
+.list_class_bottom_l .a_bian:hover::after{
+    display:inline-block;
+    background:rgba(0,0,0,0.5);
+}
 
 
 
