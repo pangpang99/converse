@@ -850,7 +850,7 @@ margin-top:50px;
 
 
 
-/* 最下面的示图-- --------------------*/
+/* 最下面的示图---- --------------------*/
 .list_class_bottom{
     width:1000px;
     height:auto;
@@ -858,7 +858,7 @@ margin-top:50px;
    
     position: relative;
 }
-/* 标题尺寸 */
+/* 标题尺寸  */
 .list_class_bottom> .list_logo_img_b{
     width:1000px;
     height:40px;
