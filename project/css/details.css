@@ -1,12 +1,33 @@
+/* 页面头部 的空白区域 */
 .wrap_top{
-    width:100%;height:80px;border:solid #fff;
+    width:100%;height:80px;border:1px solid #fff;
 }
+/* 外面的div布局 */
 .xiang_qing{
+    width:50%;
+    height:926px;
     box-sizing:border-box;
     width:50%;
     margin:0 auto;
     display:flex;
 }
+/* 左边分享布局 */
 .xq_left{
-    width:200px;height:130px;
+    width:200px;height:130px;border:1px solid #f00;
+}  
+.fei_left>span>i>img{width:25px;}
+.fei_left>span{
+    display:block;width:20px;height:200px;
+}
+.fei_center{
+     display:block;
+     width:155px;height:20px;border:1px solid #f0f;
+}
+/* 中间布局  */
+.xq_center{
+    width:520px;height:926px;border:1px solid #ff0;
+}
+/* 右边提交布局 */
+.xq_right{
+    width:200px;height:429px;border:1px solid #f0f;
 }
