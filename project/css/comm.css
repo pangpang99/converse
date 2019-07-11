@@ -1,12 +1,16 @@
 /*清0*/
 *{
     margin:0;padding:0;
-    list-style:none;text-decoration:none;
-    
+    list-style:none;text-decoration:none;    
   }
   img{
    vertical-align: middle;
   }
+ /*新加的7月11号*/
+ .pp{
+     font-family:"tradegothic","fzlthjw","微软雅黑","Microsoft YaHei","黑体","SimHei";
+ }
+
   /*通用的字体颜色
   白色字体 登录注册那样的*/
   .my_small{color:#fff;
@@ -30,6 +34,9 @@
 .wei_zi15px{
   font-size:13px;
   color:#000;
+  font-family:"tradegothic","fzlthjw","微软雅黑","Microsoft YaHei","黑体","SimHei";
+ 
+
 }
 .wei_zi15px{
   font-weight:bold;
