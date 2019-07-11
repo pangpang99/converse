@@ -3,7 +3,7 @@
     box-sizing:border-box;
     width:1000px;
     height:317px;
-    border:1px solid #000;
+    /* border:1px solid #000; */
     display:flex;
     margin:0 auto;
     padding:40px 0;
@@ -98,5 +98,8 @@
     border-bottom:2px solid #000;
     transform:rotate(-45deg);
     position: relative;top:-12px;left:-17px;
+}
+input{
+    outline: 0;
 }
 

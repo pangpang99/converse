@@ -157,6 +157,9 @@
     background-position:-38px -162px;
     transition:0.5s;
 }
+input{
+    outline: 0;
+}
 
 
 
