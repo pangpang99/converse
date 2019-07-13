@@ -48,7 +48,7 @@
   .dao_a{
     display: flex;
     justify-content: space-around;
-    min-width:800px;
+    min-width:1500px;
   }
   /* 登录注册 */
   .dao_a .top-nav{
@@ -192,6 +192,7 @@
    top:40px;
    left:-32px;
  } 
+
 .strut_ul span{
     font-size:13px;
 }
@@ -545,7 +546,7 @@ margin-top:50px;
 /* <!-- 查看更多所有更多商品 --> */
 
 .gen_duo1{
-    width:300px;height:40px;
+    width:370px;height:40px;
     border:1px solid #000;
     background:#000;
     color:#fff;
