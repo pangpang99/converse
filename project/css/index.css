@@ -249,19 +249,16 @@
 
 
 
-
-
-
-
-
-
 /* 说明 */
 .homenotice{
     /* border:1px solid #ddd; */
-  height:100%;
+  height:49px;
   background:#fff;
   position: relative;
-  top:135px;
+  top:128px;
+  width:100%;
+  z-index: 10;
+ 
   
 }
 .homenotice .ht{
@@ -274,83 +271,78 @@
 }
 
 
-
-/* 轮播部分 */
-
-.demo{
-    box-sizing:border-box;
+/* 轮播图的校式 */
+.container {
     position: relative;
-    top:135px;
+    width: 1900px;  /*600*/
+    height: 747px; /*400*/
+    margin:100px auto 0 auto;
+    box-shadow: 0 0 5px green;
+    overflow: hidden;
 }
-.demo_center>div>img{
-  width:100%;
-  /* height:100%; */
- 
+/*全部图片 的总长度*/
+.wrap {
+    position: absolute;
+    width: 13300px; /*4200*/
+    height: 747px;  /*400*/
+    z-index: 1;
 }
-/* .img_width{
-    width:100%;
-} */
-/* 左边按钮 */
-.left_l{
-     float:left;
-    background-color:#292820;
-     width:40px;
-     height:100px;
-     position: absolute;
-     top:42%;  
- }
-/* .left_l>a>{
-      width:21px;
-      height:40px;
-       background:url(..\img\images\commons\homeslide_arrow.png) no-repeat -200px -260px;
-  } */
- /* 右边按钮  */
-  .demo_center .right_r{
-    float:right;
-    background-color:#292820;
-     width:40px;
-     height:100px;
-     position: absolute;
-     top:42%; 
-     right:0; 
- }
-/* 轮播指示器 */
-.demo_bottom_l{
-    /* height:36px; */
-    /* border:1px solid #f00; */
-    text-align:center;
-    margin:8px 0;
-    /* padding:20px 0; */
+/*每张图片的尺寸*/
+.container .wrap .boimg {
+    float: left;
+    width: 1900px;  /*600px*/
+    height: 747px;  /*400*/
 }
-.demo_bottom_l>ul{
-    display:inline-block;
-    height:150px;
-   
-    
+
+/*  轮播指时器*/
+    .buttons{
+      position: relative;
+      top: 22px;
+      left: 800px;
+      width: 100%;
+      height: 20px;
+      z-index: 2;
+       }
+
+.buttons .sp1{
+    width:300px;
+    cursor: pointer;
 }
-/* 浮动 */
-.demo_bottom_l>ul>li{
-    float:left;
-    /* padding:20px 8px; */
-    /* text-align:center; */
-    padding:5px 8px;
+/*指时器的hover后的样式*/
+.buttons .sp1:hover{
+   box-sizing:border-box;
+   text-decoration:overline;
+   color:#ddd;
+   padding-left:5px;
 }
-/* 高度坍塌 */
-.demo_bottom_l>ul:after{
-	content:"";
-	display:block;
-	clear:both;
+/*左右箭头的样式*/
+.container .arrow {
+    position: absolute;
+    top: 35%;
+    width:40px;
+    height:80px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    font-size:45px;
+     z-index: 2;
+    display: none;      
 }
-/* 轮播指示器变化的颜色 */
-div >.demo_bottom_ll>li>a{
-    color:#999999;
+/*左右箭头图片的距离*/
+.arrow>.boimg{
+  margin-top:15px;
+
 }
-/* 轮播指示器变化的颜色 */
-.demo_bottom_ll>li>a:hover, .demo_bottom_ll>li.select{
-    border-top:1px solid #000;
-    color:#000;
-    font-size:12px;
+.container .arrow_left {
+    left: 1px;
 }
+.container .arrow_right {
+    right: 1px;
+}
+.container:hover .arrow {
+    display: block;
+}
+
+
 
 
 
@@ -379,7 +371,7 @@ div >.demo_bottom_ll>li>a{
     height:1087px;
     /* border:1px solid #f00; */
     margin:80px 328px 0;
-    margin:0 auto;
+    margin:80px auto 50px;
 }
 
 

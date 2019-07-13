@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/comm.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/zhuce.css">
-    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/jquery-1.11.3.js"></script> -->
 </head>
 
 <body>
@@ -155,12 +156,12 @@
             </div>
         </div>
 
-        <script>
+        <!-- <script>
             $("cbtn").click(function (e) {
                 e.stopPropagation();
                 $()
             });
-        </script>
+        </script> -->
         <!-- 第二条导航 -->
         <div class="snb">
             <ul class="snb_a">
@@ -307,10 +308,177 @@
         <a class="ht"
             href="">尊敬的顾客您好，我们店铺是不会泄露您的消费信息的，请放心。另外我们也不会要求获取、收集、使用任何与消费者金融消费类（如：信用卡）信息，如果接到以上信息电话，是属于诈骗电话，请勿相信，以防钱财损失。如您对订单有疑问，请联系在线客服。</a>
     </div>
+     <!-- 轮播图片 -->
+    <div class="container">
+        <div class="wrap" style="left: -1900px;">  <!--600-->
+            <img class="boimg" src="./img/static/kvpc/bg5.jpg" alt="">
+            <img class="boimg" src="./img/static/kvpc/bg1.jpg" alt="">
+            <img class="boimg" src="./img/static/kvpc/bg2.jpg" alt="">
+            <img class="boimg" src="./img/static/kvpc/bg3.jpg" alt="">
+            <img class="boimg" src="./img/static/kvpc/bg4.gif" alt="">
+            <img class="boimg" src="./img/static/kvpc/bg5.jpg" alt="">
+            <img class="boimg" src="./img/static/kvpc/bg1.jpg" alt="">
+        </div>
+        <a href="javascript:;" class="arrow arrow_left">
+		<!--左箭头的图片 -->
+		 <img src="./img/static/kvpc/jiantou-zuo.png" alt="">
+		</a>
+		
+        <a href="javascript:;" class="arrow arrow_right">
+		 <!--右箭头的图片 -->
+		  <img src="./img/static/kvpc/jiantou-you.png" alt="">
+		</a>
+    </div>
+	 <div class="buttons">
+	      
+            <span class="on">RENEW</span>
+            <span class="">All Star</span>
+            <span class="">ERX</span>
+            <span class="">JP GOLD</span>
+            <span class="">LOVE</span>
+			
+        </div>
+
+
+<script>
+// 轮播图js代码
+
+var wrap = document.querySelector(".wrap");
+        var next = document.querySelector(".arrow_right");
+        var prev = document.querySelector(".arrow_left");
+		var container = document.querySelector(".container");
+		var dots = document.getElementsByTagName("span");
+        next.onclick = function () {
+            next_pic();
+        }
+        prev.onclick = function () {
+            prev_pic();
+        }
+		function next_pic () {
+            var newLeft;
+            if(wrap.style.left === "-11400px"){/*-3600*/
+                newLeft = -3800; /**1200*/
+            }else{
+                newLeft = parseInt(wrap.style.left)-1900;/*-600*/
+            }
+            wrap.style.left = newLeft + "px";
+			index++;
+            if(index > 4){
+                index = 0;
+            }
+			showCurrentDot();
+        }
+        function prev_pic () {
+            var newLeft;
+            if(wrap.style.left === "0px"){
+                newLeft = -7600;/*-2400*/
+            }else{
+                newLeft = parseInt(wrap.style.left)+1900;/*600*/
+            }
+            wrap.style.left = newLeft + "px";
+			index--;
+            if(index < 0){
+                index = 4;
+            }
+            showCurrentDot();
+        }
+		var timer = null;
+        function autoPlay () {
+            timer = setInterval(function () {
+                next_pic();
+            },3000);
+        }
+        autoPlay();
+        container.onmouseenter = function () {
+            clearInterval(timer);
+        }
+        container.onmouseleave = function () {
+            autoPlay();    
+        }
+		var index = 0;
+        
+        function showCurrentDot () {
+            for(var i = 0, len = dots.length; i < len; i++){
+                dots[i].className = "";
+            }
+            dots[index].className = "on";
+        }
+		 function btn(){
+			for (var i = 0, len = dots.length; i < len; i++){
+            (function(i){
+                dots[i].onclick = function () {
+                    var dis = index - i;
+                    if(index == 4 && parseInt(wrap.style.left)!==-9500){/*-3000*/
+                        dis = dis - 5;     
+                    }
+                    if(index == 0 && parseInt(wrap.style.left)!== -1900){/*-600*/
+                        dis = 5 + dis;
+                    }
+                    wrap.style.left = (parseInt(wrap.style.left) +  dis * 1900)+"px";/*600*/
+                    index = i;
+                    showCurrentDot();
+                }
+            })(i);            
+			 }
+		 }
+		 btn()
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- 轮播图片 -->
-    <div class="demo">
-        <!-- 轮播图 -->
+    <!-- <div class="demo">
+    
         <div class="demo_center">
          <ul>
              <li><a href=""><img src="img\Lmages\ttc_kv_pc_190628.jpg" alt=""></a> </li>
@@ -320,28 +488,12 @@
              <li><a href=""><img src="" alt=""></a> </li>
          </ul>
 
-
-
-
-
-
-
-
-
-
-
             <div>
                 <img src="img\Lmages\ttc_kv_pc_190628.jpg" alt="">
             </div>
-            <!-- <div>
-           <img src="img\Lmages\os_dimension_kv_pc_190426.jpg" alt="">
-        </div>
-       <div>
-           <img src="img\Lmages\lbhd_kv_pc_190401.jpg" alt="">
-        </div>
-       <div>
-           <img src="img\Lmages\jp_gold_kv_pc_190426.jpg" alt="">
-        </div> -->
+          
+
+
             <div class="left_l">
                 <a href=""><span><img src="e17675fa0b46c54be485ed0c421fc99.png" alt=""></span></a>
             </div>
@@ -358,7 +510,9 @@
                 <li><a href="">LABELHOOD</a></li>
             </ul>
         </div>
-    </div>
+    </div> -->
+
+
     <!-- 商品列表---热卖 -->
     <div class="list_top">
 
@@ -579,7 +733,7 @@
                     Star’70延续70鞋款的经典鞋型设计，偏窄鞋头与修长鞋型上脚优雅显瘦。同时鞋面采用皮革材质，提升了品质感。沿用至今的复古大鞋舌，不对称鞋头挡泥板与光亮的鞋围条细节，加厚海绵鞋垫提升了舒适度
                 </p>
                 <div class="gen_duo">
-                    <span class="gen_duo_d"> <a href="">查看更多</a></span>
+                    <span class="gen_duo_d"> <a href="javascript:;">查看更多</a></span>
                 </div>
                 <!-- <div class="list_class_top_l_kan">
                         <p><a href="">查看更多</a></p>
@@ -592,7 +746,7 @@
                 <p class="wei_zi12px">这是一款轻薄度升级的正宗沙滩版Chuck鞋款。Converse Chuck Taylor All Star
                     Dainty轻便胶鞋采用窄版比例、鞋面窄镶边和超低帮打造，匠心添加不凡细节设计。条纹闪光色纺织织物鞋面巧搭半透明缎质鞋带和时尚箭头细节镶边等柔美设计，彰显不凡街头魅力。</p>
                 <div class="gen_duo">
-                    <span class="gen_duo_d"> <a href="">查看更多</a></span>
+                    <span class="gen_duo_d"> <a href="javascript:;">查看更多</a></span>
                 </div>
                 <!-- <div class="list_class_top_l_kan">
                         <p><a href="">查看更多</a></p> -->
@@ -614,7 +768,7 @@
                 <p class="wei_zi15px">
                     Converse篮球风格重磅重归，通过标志性的基因和元素，将匡威篮球DNA和记忆故事体现得淋漓尽致。鞋侧经典的星箭标志带来富有现代感的篮球实战体验，这个夏季一起抢占球场精彩表现。</p>
                 <div class="list_cai">
-                    <p><a class="wei_zicolor" href="">查看更多</a></p>
+                    <p><a class="wei_zicolor" href="javascript:;">查看更多</a></p>
                     <div class="list_cai_img"></div>
                 </div>
             </div>
@@ -625,7 +779,7 @@
                 <p class="wei_zi15px">低帮轻便胶鞋搭配双重魔术贴粘扣固定带，便于穿脱，牛皮革鞋面搭配纺织织物鞋舌，硫化中底搭配橡胶大底，加垫鞋口和鞋舌，舒适非凡，Converse舒适缓震鞋垫。
                 </p>
                 <div class="list_cai">
-                    <p><a class="wei_zicolor" href="">查看更多</a></p>
+                    <p><a class="wei_zicolor" href="javascript:;">查看更多</a></p>
                     <div class="list_cai_img"></div>
                 </div>
             </div>
@@ -636,7 +790,7 @@
                 <p class="wei_zi15px">夏日新款，让整体焕发出新的生命力，年轻感强烈。采用轻薄材质面料，轻质可打包，穿着柔软舒适，增添几分华丽气息。</p>
                 <div class="list_cai">
 
-                    <p><a class="wei_zicolor" href="">查看更多</a></p>
+                    <p><a class="wei_zicolor" href="javascript:;">查看更多</a></p>
                     <div class="list_cai_img"></div>
 
                 </div>
