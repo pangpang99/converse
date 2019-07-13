@@ -305,20 +305,23 @@
        }
 
 .buttons .sp1{
+    box-sizing:border-box;
     width:300px;
+    color:#9999A3;
+    margin-left:5px;
     cursor: pointer;
 }
 /*指时器的hover后的样式*/
 .buttons .sp1:hover{
    box-sizing:border-box;
    text-decoration:overline;
-   color:#ddd;
+   color:#000;
    padding-left:5px;
 }
 /*左右箭头的样式*/
 .container .arrow {
     position: absolute;
-    top: 35%;
+    top: 45%;
     width:40px;
     height:80px;
     background:rgba(0,0,0,0.5);

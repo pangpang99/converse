@@ -1,10 +1,9 @@
 // 轮播图
-
 var wrap = document.querySelector(".wrap");
         var next = document.querySelector(".arrow_right");
         var prev = document.querySelector(".arrow_left");
 		var container = document.querySelector(".container");
-		var dots = document.getElementsByTagName("span");
+		var dots = document.getElementsByClassName("sp1");
         next.onclick = function () {
             next_pic();
         }
@@ -55,10 +54,12 @@ var wrap = document.querySelector(".wrap");
 		var index = 0;
         
         function showCurrentDot () {
+            console.log(dots)
             for(var i = 0, len = dots.length; i < len; i++){
-                dots[i].className = "";
-            }
-            dots[index].className = "on";
+                
+                dots[i].ClassName ="";
+            }  /*寻找.buttons.className="on"*/ 
+               dots[index].ClassName = "on";
         }
 		 function btn(){
 			for (var i = 0, len = dots.length; i < len; i++){
