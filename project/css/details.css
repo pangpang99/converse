@@ -4,28 +4,51 @@
 }
 /* 外面的div布局 */
 .xiang_qing{
-    width:50%;
+    width:1000px;
     height:926px;
     box-sizing:border-box;
     width:50%;
     margin:0 auto;
     display:flex;
+    flex-wrap:nowrap;
+    /* flex-direction:column; */
+    justify-content:space-between;
 }
 /* 左边分享布局 */
 .xq_left{
-    width:200px;height:130px;border:1px solid #f00;
+    width:200px;height:130px;
 }  
+/* 分享3个点的img */
 .fei_left>span>i>img{width:25px;}
 .fei_left>span{
-    display:block;width:20px;height:200px;
+   width:20px;height:200px;
+}
+/* 分享字hover后添加下划线和颜色变浅 */
+.fei_left:hover{
+    text-decoration: underline;
+    filter:alpha(Opaciy=60);
+    opacity: 0.6;
 }
 .fei_center{
+    margin:8px 0;
      display:block;
-     width:155px;height:20px;border:1px solid #f0f;
+     width:155px;height:20px;;
 }
+.fei_center:hover{
+    text-decoration: underline;
+    filter:alpha(Opaciy=60);
+    opacity: 0.6;
+}
+
 /* 中间布局  */
 .xq_center{
-    width:520px;height:926px;border:1px solid #ff0;
+    width:520;height:926px;border:1px solid #ff0;
+}
+/* 大件衣服的下面小图标 */
+.xq_center>.xq_lubo{
+    width:520px;
+    height:72px;
+    display: inline-block;
 }
 /* 右边提交布局 */
 .xq_right{
