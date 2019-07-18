@@ -49,7 +49,16 @@
     width:520px;
     height:72px;
     display: inline-block;
+    margin-top:10px;
 }
+.xq_center>.xq_lubo a img{
+    width:60px;
+    height:60px;
+   
+}
+/* .xq_center>.xq_lubo a+a{
+    margin-left:8px; 
+} */
 /* 右边提交布局 */
 .xq_right{
     width:200px;height:429px;border:1px solid #f0f;

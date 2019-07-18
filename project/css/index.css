@@ -115,6 +115,11 @@
     cursor:pointer;
   }
 
+.dao_a div~div:hover{
+    transition:all .5s; 
+        filter:alpha(Opaciy=60);
+        opacity: 0.6;
+}
 
 
  .dao_a .top_nav{
@@ -760,8 +765,19 @@ margin-top:50px;
     margin:12px 0;
     cursor: pointer;
 }
+.list_class_top_l>h2:hover{
+    transition:all .5s; 
+        filter:alpha(Opaciy=60);
+        opacity: 0.6;
+}
 .list_class_top_l p{
     cursor:pointer;
+}
+/* hover颜色变浅 */
+.list_class_top_l p:hover{
+    transition:all .5s; 
+        filter:alpha(Opaciy=60);
+        opacity: 0.6;
 }
 /* .list_class_top_r>h2{
     margin:12px 0;
@@ -822,21 +838,8 @@ margin-top:50px;
 .list_class_top_l .img_bian{
     position: relative;
     display: inline-block;
-    /* width:488px;
-    height: 366px; */
 }
-/* .list_class_top_l a .mask{
-  display: none;
-  width:100%;height:100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.list_class_top_l a:hover .mask{
-    display: inline-block;
-    background-color:#000;
-    opacity:.5;
-} */
+
 .list_class_top_l .img_bian::after{
     content: "";
     display: block;
@@ -928,8 +931,13 @@ clear:both;
 /* h2的文字 加小手 */
 .list_class_bottom_l >h2{
     margin:12px 0;
-    cursor: pointer;
-    
+    cursor: pointer;  
+}
+/* hover后字的颜色变浅 */
+.list_class_bottom_l >h2:hover{
+    transition:all .5s; 
+    filter:alpha(Opaciy=60);
+    opacity: 0.6;  
 }
 
 .list_class_bottom_l>div>p{
@@ -939,6 +947,12 @@ clear:both;
 /* 小手  */
 .list_class_bottom_l>p{
     cursor: pointer;
+}
+.list_class_bottom_l>p:hover{  
+       transition:all .5s; 
+        filter:alpha(Opaciy=60);
+        opacity: 0.6;
+    
 }
 
 
@@ -1068,9 +1082,14 @@ clear:both;
 .base .base_xia{
     margin: 0 0 20px;
 }
-a{
+.list_cai a{
     color:#000;
     font-size:18px;
+}
+.list_cai a:hover{
+    transition:all .5s; 
+        filter:alpha(Opaciy=60);
+        opacity: 0.6;
 }
 
 
@@ -1098,7 +1117,12 @@ a{
 }
 .footer_cc>li{margin: 0 20px;
 }
-
+/* hover脚部颜色变浅 */
+.under_la a:hover{
+    transition:all .5s; 
+        filter:alpha(Opaciy=60);
+        opacity: 0.6;
+}
 
 div>p{text-align: center;
 }
