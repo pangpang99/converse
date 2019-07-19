@@ -1,7 +1,8 @@
 /*清0*/
 *{
     margin:0;padding:0;
-    list-style:none;text-decoration:none;    
+    list-style:none;text-decoration:none;
+    box-sizing:border-box;    
   }
   img{
    vertical-align: middle;
@@ -15,6 +16,7 @@ a{
   color:#000;
   font-size:18px;
 }
+p,li{font-size:11px;}
   /*通用的字体颜色
   白色字体 登录注册那样的*/
   .my_small{color:#fff;

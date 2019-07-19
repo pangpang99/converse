@@ -48,17 +48,34 @@
 .xq_center>.xq_lubo{
     width:520px;
     height:72px;
-    display: inline-block;
+    display:inline-block;
     margin-top:10px;
 }
+/* a标签设置行内块 可以设置宽高 */
+.xq_center>.xq_lubo a{
+    display:inline-block;
+    width:72px;height:72px;
+    
+}
+/* hover后出现的小图标 */
+.xq_center>.xq_lubo a:hover{
+    border:1px solid #ddd;
+   transition:all .5s linear ;
+}
+.xq_center>.xq_lubo a+a{
+    margin-left:11px;
+}
+/* 小图标的宽高 */
 .xq_center>.xq_lubo a img{
     width:60px;
-    height:60px;
-   
+    height:60px;     
 }
-/* .xq_center>.xq_lubo a+a{
-    margin-left:8px; 
-} */
+.xq_queren ul li{list-style-type:disc;}
+.xq_queren ul li:nth-child(1)::before{
+      display:block;
+      content:"正面印有LIFE'S TOO SHORT TO WASTE图案";    
+}
+
 /* 右边提交布局 */
 .xq_right{
     width:200px;height:429px;border:1px solid #f0f;
