@@ -253,30 +253,30 @@
     margin:10px 0 0;
 }
 /* 图片浮动 */
-.xq_middle .xq_middle_lvbo dl{
+.danju .xq_middle_lvbo dl{
     float:left;
     width:25%;height:300px;
     text-align: center;
 }
 
 /* 图片清除浮动 */
-.xq_middle .xq_middle_lvbo::after{
+.danju .xq_middle_lvbo::after{
     display:block;
     content:"";
     clear: both;
 }
-.xq_middle .xq_middle_lvbo dl:hover{
+.danju .xq_middle_lvbo dl:hover{
     border:1px solid #999;
     transition:all .3s linear;
 }
-.xq_middle .xq_middle_lvbo img{
+.danju .xq_middle_lvbo img{
     margin-bottom:13px;
       width:165px;
 }
-.xq_middle .xq_middle_lvbo .xq_dd{
+.danju .xq_middle_lvbo .xq_dd{
     height:50px;
 }
-.xq_middle .xq_middle_lvbo dl dd:last-child{
+.danju .xq_middle_lvbo dl dd:last-child{
     margin-bottom:12px;
 }
 
@@ -292,8 +292,30 @@
 /* 最近查看的商品 */
 .zjck{
     width:1000px;
-    margin:0 auto 50px;
+    margin:0 auto 0;
 }
+.zjck .xq_mm{
+    margin-bottom:50px;
+}
+/* 重修脚部分 */
+.sitemap{
+    width:1000px;
+    margin:50px auto 0;
+    position: relative;
+}
+.danju .sm_xin{
+    width:1000px;
+    height:1px;
+    background:#666;
+    margin:20px 0;
+    position: absolute;
+    top:-37px;
+    left:0px;
+}
+
+
+
+
 
 
 

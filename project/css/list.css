@@ -1,8 +1,39 @@
+
+
+ #d1{
+     display:block;
+     /* background:#f00; */
+     width:100%;
+     height:200px;
+ }
+
+
+
+
+
+.na_na{
+    width:1000px;
+    
+}
+.dao_top{
+    position: absolute;
+    z-index: 30;
+}
+
+
+
+
+
+
+
+
+
+
 /* 男的商品列表的标题 */
 .boy_list{
     width:1000px;
     /* border:1px solid #000; */
-    margin:40px 331px 45px;
+    margin:0px 331px 45px;
     position: relative;
 }
 /* 商品列表的标题居中 */
@@ -10,10 +41,10 @@
     width:265px;
     height:31px;
     text-align:center;
-    margin:12px auto;
+    margin:0 auto;
     position: relative;
     background:#fff;
-    z-index:20;
+    z-index:10;
 }
  .boy_list>.xiahua{
     width:800px;
@@ -33,7 +64,7 @@
 .list_left_dao{
     /* border:1px solid #000; */
     float:left;
-    width:255px;
+    /* width:255px; */
     height:auto;
     padding:0 30px 0 200px ;
 }

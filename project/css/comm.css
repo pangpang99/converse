@@ -15,7 +15,7 @@
 /* 所有a标签的颜色 */
 a{
   color:#000;
-  font-size:18px;
+  /* font-size:18px; */
 }
 .fz12px{font-size:12px !important;}
 .fz13px{font-size:13px !important;}
