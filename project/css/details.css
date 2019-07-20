@@ -1,3 +1,7 @@
+
+.danju{
+    min-width:1700px;
+}
 /* 页面头部 的空白区域 */
 .wrap_top{
     width:100%;height:80px;border:1px solid #fff;
@@ -5,7 +9,7 @@
 /* 外面的div布局 */
 .xiang_qing{
     width:1000px;
-    height:926px;
+    /* height:926px; */
     box-sizing:border-box;
     width:50%;
     margin:0 auto;
@@ -42,7 +46,9 @@
 
 /* 中间布局  */
 .xq_center{
-    width:520;height:926px;border:1px solid #ff0;
+    width:520px;
+    /* height:926px; */
+    /* border:1px solid #ff0; */
 }
 /* 大件衣服的下面小图标 */
 .xq_center>.xq_lubo{
@@ -55,28 +61,239 @@
 .xq_center>.xq_lubo a{
     display:inline-block;
     width:72px;height:72px;
-    
+    text-align:center;  
 }
 /* hover后出现的小图标 */
 .xq_center>.xq_lubo a:hover{
     border:1px solid #ddd;
    transition:all .5s linear ;
 }
+/* 每个小图标的间的距离 */
 .xq_center>.xq_lubo a+a{
     margin-left:11px;
 }
 /* 小图标的宽高 */
 .xq_center>.xq_lubo a img{
     width:60px;
-    height:60px;     
+    height:60px;
+       
 }
-.xq_queren ul li{list-style-type:disc;}
+/* 小图标和下面字的距离 */
+.xq_queren{
+    margin-top:20px;
+}
 .xq_queren ul li:nth-child(1)::before{
       display:block;
-      content:"正面印有LIFE'S TOO SHORT TO WASTE图案";    
+      content:"• 正面印有LIFE'S TOO SHORT TO WASTE图案";    
+}
+.xq_queren ul li:nth-child(2)::before{
+    display:block;
+    content:"• 大身材质采用部分再生面料，加载环保理念的同时穿着舒适";
+}
+.xq_queren ul li:nth-child(3)::before{
+    display:block;
+    content:"• Converse Renew旗帜标签";
+}
+/* 小图标下面的h4 */
+.xq_queren h4{
+  margin-top:30px;
+}
+.xq_queren h3{
+    margin-top:30px;
+    margin-bottom:10px;
+    color:#333;
 }
 
+.xq_queren a{
+    display:block;
+    border:1px solid #ddd;
+    border-radius:3px;
+    width:300px;
+    height:50px;
+    background:#000;
+    color:#fff;
+    text-align: center;
+    line-height:50px;
+    margin:0 auto;
+    margin-top:50px;
+}
+.xq_queren a:hover{
+    color:#000;
+    background:#fff;
+    transition:all .3s linear;
+    
+}
 /* 右边提交布局 */
 .xq_right{
-    width:200px;height:429px;border:1px solid #f0f;
+    width:200px;height:429px;
+    /* border:1px solid #f0f; */
 }
+/* 右边小图标a标签 */
+.xq_right .xq_r_top a{
+    display:inline-block;
+    width:60px;height:60px;
+    text-align: center;
+}
+.xq_right .xq_r_top a img{
+    display:inline-block;
+    width:40px;height:40px;
+    /* vertical-align:middle; */
+}
+.xq_right .xq_r_top a:hover{
+    border:1px solid #ddd;
+    transition:all .3s linear;
+}
+.xq_right .xq_r_middle>div:nth-child(2){
+    padding:11px 0;
+    border-bottom:1px solid #ddd;
+    width:198px;
+}
+.xq_right .xq_r_bottom>p{
+     padding:12px 0;
+     font-size:17px;
+}
+.xq_r_bottom div{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 0;
+}
+.xq_right .xq_r_bottom .text_t p{
+    display:inline; 
+}
+
+.xq_right .xq_r_bottom .text_t p,
+.xq_right .xq_r_bottom .text_b p{
+    width:90px;
+    height:30px;
+    line-height:30px;
+    font-size:12px; 
+}
+.xq_right .xq_r_bottom .text_b{
+    margin:15px 0;
+}
+.xq_right .xq_r_bottom div input{
+    width:70px;height:30px;
+    text-align:right;
+    padding:1px;  
+}
+/* a标签的背景图片 */
+.xq_r_bottom a{
+     display:block;
+     width:200px;height:50px;
+     border-radius: 2px;
+     text-align:center;
+     line-height:50px;
+     color:#fff;
+}
+.xq_r_bottom .xq_a{
+    background:#940000;
+    margin-bottom:5px;
+}
+.xq_r_bottom .xq_aa{
+    background:#940000;
+    position: relative;
+}
+.xq_r_bottom .xq_aa>p{
+    width:30px;
+    height:30px;
+   
+}
+/* .xq_r_bottom .xq_aa::before{
+    display:block;
+    content:"";
+    width:10px;
+    height:10px;
+    background-image:url("./img/images/commons/detail.png") #fff no-repeat 10% 10%; 
+} */
+.xq_r_bottom a:hover{
+    filter:alpha(Opaciy=60);
+    opacity: 0.6;
+}
+/* 整个中间的内容  */
+.xq_middle{
+    width:1000px;
+    /* height:1000px; */
+    /* border:1px solid #000; */
+    margin:80px auto 0;
+   /* position: relative; */
+}
+/* 你或许会喜欢的居中 */
+
+.danju .xq_mm:first-child:before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #999;
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+/* 文字的居中 */
+.danju .xq_mm:first-child{
+    text-align: center;
+    /* margin:20px 0 0; */
+}
+.danju div h2{
+    font-size:30px;
+    font-weight:400;
+    background:#fff;
+    padding:0 25px 0;
+    position: relative;
+    display:inline-block;
+}
+/* 轮播的大小 */
+.xq_middle .xq_middle_lvbo{
+    width:1000px;
+    height:319px;
+    padding:0 0 10px;
+    margin:10px 0 0;
+}
+/* 图片浮动 */
+.xq_middle .xq_middle_lvbo dl{
+    float:left;
+    width:25%;height:300px;
+    text-align: center;
+}
+
+/* 图片清除浮动 */
+.xq_middle .xq_middle_lvbo::after{
+    display:block;
+    content:"";
+    clear: both;
+}
+.xq_middle .xq_middle_lvbo dl:hover{
+    border:1px solid #999;
+    transition:all .3s linear;
+}
+.xq_middle .xq_middle_lvbo img{
+    margin-bottom:13px;
+      width:165px;
+}
+.xq_middle .xq_middle_lvbo .xq_dd{
+    height:50px;
+}
+.xq_middle .xq_middle_lvbo dl dd:last-child{
+    margin-bottom:12px;
+}
+
+/* 评论 */
+.pinglun{
+    width:1000px;
+    margin:50px auto 50px;
+}
+.pinglun .pl_middle{
+  text-align:center;  
+  margin-top:15px;
+}
+/* 最近查看的商品 */
+.zjck{
+    width:1000px;
+    margin:0 auto 50px;
+}
+
+
+

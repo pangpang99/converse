@@ -2,7 +2,8 @@
 *{
     margin:0;padding:0;
     list-style:none;text-decoration:none;
-    box-sizing:border-box;    
+    box-sizing:border-box;outline:0;
+   
   }
   img{
    vertical-align: middle;
@@ -16,6 +17,17 @@ a{
   color:#000;
   font-size:18px;
 }
+.fz12px{font-size:12px !important;}
+.fz13px{font-size:13px !important;}
+.fz14px{font-size:14px !important;}
+.fz15px{font-size:15px !important;}
+.fz16px{font-size:16px !important;}
+
+
+
+
+
+
 p,li{font-size:11px;}
   /*通用的字体颜色
   白色字体 登录注册那样的*/
@@ -24,7 +36,8 @@ p,li{font-size:11px;}
   }
   .my_weizi{font-size:12px;}
   /* .wrapper{height:100%;width:100%; */
-  
+  a,p,ul,li{color:#333333;
+    font-family: "tradegothic","fzlthjw","微软雅黑","Microsoft YaHei","黑体","SimHei";}
 
 .my_smallb{color:#fff ;}
   /* 第二条导航栏男的女的那样的 */
