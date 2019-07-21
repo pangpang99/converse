@@ -26,6 +26,7 @@
     border-left:1px solid #999999;
     border-right:1px solid #999999;
     position: relative;
+    cursor: pointer;
 
 }
 .ce_center dd{
@@ -43,13 +44,13 @@
     width:300px;height:337px;
 }
 .ce_right dd input{
-    width:274px;height:28px;
+    width:274px;height:40px;
     margin:0 0 20px 0;
     padding:5px 5px 5px 16px;
 }
 .ce_yanzhang{
     border:1px solid #999999;
-    width:238px;height:28px;
+    width:238px;height:40px;
     margin:0 0 12px 0;
     padding:5px 5px 5px 54px;
     color:#666666;
@@ -74,7 +75,7 @@
 /* 登录按钮的样式 */
 .ce_btn{
    width:300px;
-   margin:0 0 5px 0 !important; 
+   margin:5px 0 5px 0 !important; 
 }
 .ce_bottom{
     display:flex;
