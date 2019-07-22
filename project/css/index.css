@@ -247,8 +247,6 @@
  */
 
 
-
-
 /* 说明 */
 .homenotice{
     /* border:1px solid #ddd; */
@@ -271,13 +269,22 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 /* 轮播图的校式 */
 .container {
     position: relative;
     width: 1900px;  /*600*/
-    height: 747px; /*400*/
+    height: 790px; /*400*/
     margin:100px auto 0 auto;
-    box-shadow: 0 0 5px green;
+    /* box-shadow: 0 0 5px green; */
     overflow: hidden;
 }
 /*全部图片 的总长度*/
@@ -295,29 +302,36 @@
 }
 
 /*  轮播指时器*/
-    .buttons{
+.container .buttons{
       position: relative;
-      top: 22px;
-      left: 800px;
+      top: 97%;
+      left: 43%;
       width: 100%;
       height: 20px;
       z-index: 2;
       
        }
-
-.buttons .sp1{
-    box-sizing:border-box;
+ .container .buttons .sp1{
     width:300px;
     color:#9999A3;
     margin-left:5px;
     cursor: pointer;
 }
+/* 指示器变化的颜色 */ 
+.buttons .sp1{
+    color:#666;
+}
+
 /*指时器的hover后的样式*/
 .buttons .sp1:hover{
    box-sizing:border-box;
    text-decoration:overline;
    color:#000;
    padding-left:5px;
+}
+.container .buttons span.on{
+    text-decoration:overline;
+    color: #000;
 }
 /*左右箭头的样式*/
 .container .arrow {
@@ -329,8 +343,10 @@
     color:#fff;
     font-size:45px;
      z-index: 2;
-    display: none;      
+    display: none ; 
+         
 }
+
 /*左右箭头图片的距离*/
 .arrow>.boimg{
   margin-top:15px;
@@ -347,7 +363,9 @@
 }
 
 
-
+.container .arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
 
 
 

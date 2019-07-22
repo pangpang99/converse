@@ -3,7 +3,8 @@ var wrap = document.querySelector(".wrap");
         var next = document.querySelector(".arrow_right");
         var prev = document.querySelector(".arrow_left");
 		var container = document.querySelector(".container");
-		var dots = document.getElementsByClassName("sp1");
+        var dots = document.getElementsByClassName("sp1");
+        
         next.onclick = function () {
             next_pic();
         }
@@ -42,6 +43,7 @@ var wrap = document.querySelector(".wrap");
         function autoPlay () {
             timer = setInterval(function () {
                 next_pic();
+                showCurrentDot ()
             },3000);
         }
         autoPlay();
@@ -54,12 +56,10 @@ var wrap = document.querySelector(".wrap");
 		var index = 0;
         
         function showCurrentDot () {
-            console.log(dots)
-            for(var i = 0, len = dots.length; i < len; i++){
-                
-                dots[i].ClassName ="";
-            }  /*寻找.buttons.className="on"*/ 
-               dots[index].ClassName = "on";
+            for(var i = 0; i < dots.length; i++){
+                dots[i].classList.remove("on");;
+            }   
+               dots[index].classList.add("on");
         }
 		 function btn(){
 			for (var i = 0, len = dots.length; i < len; i++){
