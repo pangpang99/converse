@@ -1,3 +1,5 @@
+//登录注册
+
 // 轮播图
 var wrap = document.querySelector(".wrap");
         var next = document.querySelector(".arrow_right");
