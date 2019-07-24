@@ -10,7 +10,7 @@
 /* 所有可点击 的样式 */
 .dai_tu a{
     display:block;
-    background:rgba(0,0,0,0.7);
+    background:transparent;
 }
 .dai_tu .dai_two{
     position: relative;
@@ -47,14 +47,43 @@
 .dai_tu .dai_six{
     position: relative;
 }
-.dai_tu .dai_six .topleft{
-    display:block;
+.dai_tu .dai_six a{
     width:14%;height:31%;
-    background:rgba(255, 255, 255, 0.6);
+}
+/* 上左 */
+.dai_tu .dai_six .topleft{
     position: absolute;
     top:2%;
     left:20.2%;
 }
-
-
+/* 上中 */
+.dai_tu .dai_six .topcentenr{
+    position: absolute;
+    top:2%;
+    left:42.9%;
+}
+/* 上右 */
+.dai_tu .dai_six .topright{
+    position: absolute;
+    top:2%;
+    left:65.7%;
+}
+/* 下左 */
+.dai_tu .dai_six .bottomleft{
+    position: absolute;
+    top:36.6%;
+    left:20.2%;
+}
+/* 下中 */
+.dai_tu .dai_six .bottomcentenr{
+    position: absolute;
+    top:36.6%;
+    left:42.9%;
+}
+/* 下右 */
+.dai_tu .dai_six .bottomright{
+    position: absolute;
+    top:36.6%;
+    left:65.7%;
+}
 
