@@ -46,7 +46,7 @@ var wrap = document.querySelector(".wrap");
             timer = setInterval(function () {
                 next_pic();
                 showCurrentDot ()
-            },3000);
+            },5000);
         }
         autoPlay();
         container.onmouseenter = function () {

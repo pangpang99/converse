@@ -1,13 +1,6 @@
 
 
 
-
-
-
-
-
-
-
 /* 大图片的样式 */
 .dian_tu{
     width:100%;
@@ -22,71 +15,56 @@
     display:block;
     border-radius: 3px;
     background:transparent; 
+    /* background:rgba(0,0,0,0.6) */
 }
 /* 为第二张图片为定位 */
 .dian_tu>.tu_two{
     position: relative;
 }
 /* 第二张图片的宽高 */
-.dian_tu>.tu_two a{
+.dian_tu>.tu_two>a{
     width:10%;
     height:6%;
-}
-/* 第二张图片定位点击的位置 */
-.dian_tu>.tu_two>a{
-       position: absolute;
-       top:42.7%;
-       left:31.6%;
+    position: absolute;
+    top:42.7%;
+    left:31.6%;
 }
 /* 第三张图片为定位 */
 .dian_tu>.tu_three{
     position: relative;
 }
 /* 第三张图片的宽高 */
-.dian_tu>.tu_three a{
+.dian_tu>.tu_three>a{
     width:10%;
     height:4%;
-}
-/* 为第三张图片定位 */
-.dian_tu>.tu_three>a{
     position: absolute;
     bottom:26.9%;
     right:31.3%;
-    
 }
+
 /* 第四张图片为定位 */
 .dian_tu>.tu_four{
     position: relative;
 }
 /* 第四张图片的宽高 */
-.dian_tu>.tu_four a{
+.dian_tu>.tu_four>a{
     width:10%;
     height:5%;
-}
-/* 为第四张图片定位 */
-.dian_tu>.tu_four>a{
     position: absolute;
     top:36%;
     left:22%;
-    /* bottom:58.95%;
-    right:67.8%; */
-    
 }
 /* 第五张图片为定位 */
 .dian_tu>.tu_five{
     position: relative;
 }
 
-.dian_tu>.tu_five a{
+.dian_tu>.tu_five>a{
     width:10%;
     height:5%;
-}
-
-.dian_tu>.tu_five>a{
     position: absolute;
     bottom:14.25%;
     right:20.8%;
-    
 }
 /* 第六张图片为定位 */
 .dian_tu>.tu_six{
@@ -100,7 +78,7 @@
     background:transparent; 
      
 }
-.dian_tu>.tu_six>.s_a_left{
+.dian_tu>.tu_six a{
     width:22%;
     height:47%;
 }
@@ -116,13 +94,9 @@
     background:transparent;   
 }
 .dian_tu>.tu_six>.s_a_right{
-    width:22%;
-    height:47%;
-}
-.dian_tu>.tu_six>.s_a_right{
     position: absolute;
     top:10%;
-    left:53.6%; 
+    left:53.6%;
 }
 
 

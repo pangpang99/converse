@@ -1,0 +1,39 @@
+  /* 外面的div的宽高 */
+.kon{
+    width:1200px;
+    height:750px;
+    background:#000;
+    margin:80px auto 0;
+}
+/* 外边距溢出 */
+.kon>.kon_li::before{display:table;content:"";}
+/* 里面的内容 */
+.kon>.kon_li>.kon_center{text-align:center;margin:250px 0;}
+/* 里面的内容的距离 */
+.kon>.kon_li>.kon_center li{ margin-bottom:20px;font-size:30px;
+    color:#fff;
+}
+.kon>.kon_li>.kon_center .li_a{text-decoration: underline;
+      color:#fff;
+}
+.kon>.kon_li>.kon_center img{
+    height:20px;
+}
+.kon>.kon_li>.kon_center .sousuo{
+    display:block;
+    width:200px;
+    height:50px;
+    background:#fff;
+    border:1px solid #fff;
+    margin:0 auto;
+    font-size:20px;
+    border-radius:3px;
+}
+.kon>.kon_li>.kon_center .sousuo:hover{
+    background:transparent;
+    color:#fff;
+    transition:all .3s linear;
+}
+
+
+
