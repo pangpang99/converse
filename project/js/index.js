@@ -1,5 +1,23 @@
 //登录注册
 
+$(document).ready(function(){
+    $(".deng").click(function(){
+      $(".zhuce").fadeToggle();
+    });
+  });
+//   $(document).ready(function(){
+//     $(".zhu").click(function(){
+//       $(".denglv").fadeToggle();
+//     });
+//   });
+
+
+
+
+
+
+
+
 // 轮播图
 var wrap = document.querySelector(".wrap");
         var next = document.querySelector(".arrow_right");

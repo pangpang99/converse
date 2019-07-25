@@ -1,32 +1,8 @@
 
 
- #d1{
-     display:block;
-     /* background:#f00; */
-     width:100%;
-     height:200px;
- }
-
-
-
-
-
 .na_na{
-    width:1000px;
-    
+        margin:90px auto 0;
 }
-.dao_top{
-    position: absolute;
-    z-index: 30;
-}
-
-
-
-
-
-
-
-
 
 
 /* 男的商品列表的标题 */
@@ -138,6 +114,7 @@ color:#333333;
 .boy_list_top >li:hover{
   border:1px solid #b7b7b7;
   cursor: pointer;
+  transition:all 0.5s;
 }
 
 

@@ -4,7 +4,7 @@
 
     /* z-index:100; */
 
-  /* 页头会缩小那部分 */
+  /*  页头会缩小那部分 */
   .dao_top{
     
       border:1px solid ;
@@ -147,10 +147,20 @@
    text-align:center;
  
  }
- .snb>.snb_a>.snb_b:hover .snb_p+.strut_a,.strut_a:hover{
+ /* .snb>.snb_a>.snb_b:hover .snb_p+.strut_a,.strut_a:hover{
   display:block;
   height:265px;
+  transition:all 5s;
+ } */
+ .snb>.snb_a>.snb_b:hover .snb_p+.strut_a{
+     display:block;
+     height:265px;
+     transition:3s;
+    
  }
+
+
+
  .strut_a{
    background:#fff;
    width:100%;
@@ -207,44 +217,6 @@
 
 
 
-
-
-/* .snb .snb_z{
-     min-width:920px;
-     background:#464646;
-     border:1px solid #464646;
- }
- .snb_z{
-     display:flex;
-     justify-content:center;  
-     position: relative;
- }
- 
-  .snb_a,.snb_b,.snb_c,.snb_d,.snb_e{
-     width:134px;
-     text-align:center;
-     line-height: 50px;
-     padding:0px 12px;
- } 
- .snb .snb_z .snb_p{
-     padding:0px 12px;
- }
-.snb_z i{
-   width:0;
-   border:20px solid #ddd;
-   border-right-color:rgba(255,255,255,0);
-   border-bottom-color:transparent;
-   border-left-color:transparent;
-   border-width:8px;
-   position:relative;
-   top:40px;
-   left:-90px;
-
-} 
-
-
-
- */
 
 
 /* 说明 */
@@ -398,6 +370,11 @@
 
 
 
+
+
+
+
+
     /* border:1px solid #000; */
 
 .list_top_biao>h1{
@@ -456,6 +433,26 @@ margin-top:50px;
     cursor:pointer;
     text-decoration:underline;
 }
+/* 会动的线 */
+#d1 .dou_xian{
+    width:1000px;
+    height:1px;
+    background:#000;
+    margin:40px 0;
+    position: relative;
+    
+}
+/* #d1 .list_list_1 h2:hover .dou_xian>div{
+left:10% !important;
+}
+ #d1 .dou_xian>div{
+    width:40px;height:30px;
+    background:url(../img/images/homepage/active.png) no-repeat ;
+    position: absolute;
+    top:0px;
+   
+} */
+
 
 
 
@@ -481,7 +478,10 @@ margin-top:50px;
 }
 /* 鼠标悬停时出现的边框 */
 .list_body_top>div{box-sizing: border-box;}
-.list_body_top>div:hover{border: 1px solid #ddd;}
+.list_body_top>div:hover{
+    border: 1px solid #ddd;
+    transition:all .3s linear;
+}
 
 .list_list_top >span{
     width:240px;
@@ -505,8 +505,8 @@ margin-top:50px;
 .list_body_top >span{
     text-align:center;
 }
-.list_body_top>div>p{
-    font-size:12px !important;
+.list_body_top>div .pname{
+    height:50px;
 }
 .list_body_top >div{
     width:250px;
@@ -518,49 +518,15 @@ margin-top:50px;
 .list_body_top{
     margin-bottom:60px;
 }
+ .list_body_top .list_body_body_1 p+p{
+    font-size:20px;
+}
 .hua{
     border:1px dashed #ddd;
-    margin-bottom:30px;
+    margin:30px 0;
 }
 /* -------------------------商品列表top2---------------------------- */
-/* 整个div */
-.list_body_top2{
-    width:1000px;
-    height:270px;
-    margin:0 0 20px;
-    }
-.list_body_top2 >div{
-    float:left;
-}
-/* 高度坍塌 */
-.list_body_top2 >div:after{
-	content:"";
-	display:block;
-	clear:both;
-}
-.list_body_top2 >span{
-    text-align:center;
-}
-.list_body_top2>div>p{
-    font-size:12px !important;
-}
-.list_body_top2 >div{
-    width:250px;
-    height:300px;
-}
-.list_body_top2 >div{
-    text-align: center;
-}
-.list_body_body_1 >p{
-    margin:0 0 20px;
-}
-/* .list_body_body_1 >p{
-    margin:0 0 20px;
-} */
 
-/* 鼠标悬停时出现的边框 */
-.list_body_top2>div{box-sizing: border-box;}
-.list_body_top2>div:hover{border: 1px solid #ddd;}
 /* <!-- 查看更多所有更多商品 --> */
 
 .gen_duo1{
@@ -596,69 +562,7 @@ margin-top:50px;
     transition:0.5s;
   }
   
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .list_list1_bottom{
-    width:420px;
-    height:48px;
-    border:1px solid #000;
-    background:#000;
-    margin:90px 0;
-    margin:0 auto;
-  
-}
-.list_list1_bottom>p>.list_list1_a{
-    color:#fff;
-}
-.list_list1_bottom>p{
-    text-align:center;
-    line-height:48px;
-   
-}
-.list_list1_bottom>:hover{
-    background:#fff;
-   
-}
-.list_list1_bottom>p:hover>.list_list1_a{
-    color:#000;
-} */
-/* -----------------最新商品样字-------------- */
-
-/* .boy_list1>h2{
-    width:265px;
-    height:31px;
-    text-align:center;
-    margin:12px auto;
-    position: relative;
-    background:#fff;
-    /* z-index:10; */
-/*     
-}
- .boy_list1>.xiahua{
-    width:1000px;
-    border-top:1px solid #b7b7b7;
-    position: relative;
-    top:31px;
-    left:285px;
-}  */ 
 .boy_list1>h2{
     text-align: center;
     background:#fff;
@@ -669,27 +573,12 @@ margin-top:50px;
     position: relative;
    }
    .boy_list1>.xiahua{
-       /* border-top:1px solid #333333; */
        width:1000px; 
        position: relative;
        top:27px;
        left:199px; 
    }
    
-   
-
-/**/
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* --------------------最新热荐商品的样品--------------- */
@@ -709,8 +598,8 @@ margin-top:50px;
     clear: both;
 }
 /* 商品文字 */
-.list_list_bottom> div p{
-    font-size:12px; 
+.list_list_bottom> div p+p{
+    font-size:20px; 
 }
 /* 每行商品尺寸 */
 .list_list_bottom{
@@ -719,14 +608,14 @@ margin-top:50px;
     
     
 }
-.list_list_bottom+.list_list_bottom{
+/* .list_list_bottom+.list_list_bottom{
     border-top:2px dotted #ddd;
      
+} */
+.list_bottom1>.ppl{
+    height:50px;
 }
-.list_bottom1>p{
-    margin:-10px 0 0;
-    padding:0 0 20px;
-}
+
 
 /* 每个商品尺寸 */
 .list_bottom1{
@@ -736,8 +625,8 @@ margin-top:50px;
 
 }
 .list_bottom1:hover{
-    box-sizing:border-box;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
+    transition:all .3s linear;
 }
 
 /* 街头上左--------------------------------------------- */
@@ -1062,25 +951,36 @@ clear:both;
 
 /* 脚部分男的女的 */
 .base{
-    /* width:100%; */
+    width:100%;
     height:610px;
-    /* border:1px solid #f00; */
     background:#fff;
-    margin:75px 331px 0px;
     text-align: center;
     min-width:992px;
-} 
-.top_hr{
-    margin:30px 0;
-    
-}
-/* 上面一行 */
-.base_int{
     display:flex;
     flex-wrap:wrap;
+    justify-content:center; 
+} 
+.base .border_p{
+    width:1000px;
+    height:1px;
+    background:#b7b7b7;
+    margin:80px 0 40px;
+}
+/* .top_hr{
+    margin:30px 0;
+    
+} */
+/* 上面一行 */
+.base_int{
+    width:1000px;height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
 }
 /* 下面一行 */
 .base_int1{
+    width:1000px;height:auto;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
@@ -1089,7 +989,7 @@ clear:both;
 .base .under_la{
  width:25%;
  height:280px;
- justify-content:center;
+ /* justify-content:center; */
 }
 .base .base_xia{
     margin: 0 0 20px;

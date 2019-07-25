@@ -1,4 +1,8 @@
-.log_bg{background:#fff;}
+.zhuce{display:none;}
+
+.log_bg{
+    background:#fff;  
+}
 .log_in{
     box-sizing:border-box;
     position: relative;

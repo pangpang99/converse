@@ -1,6 +1,8 @@
+
 /* 大图片的样式 */
 .dai_tu{
     width:100%;
+    margin-top:100px;
     position: relative;
 }
 .dai_tu img{
@@ -86,4 +88,10 @@
     top:36.6%;
     left:65.7%;
 }
-
+/* 地图的背景颜色 */
+.base{
+    background:#000 !important;
+}
+.base .border_p{
+    background:#fff;
+}
