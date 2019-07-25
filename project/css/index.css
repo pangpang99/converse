@@ -429,30 +429,77 @@ margin-top:50px;
    
     
 }
-.list_list_top>div>span>h2:hover{
+/* .list_list_top>div>span>h2:hover{
     cursor:pointer;
     text-decoration:underline;
-}
+} */
+ /* .list_list_top .list_list_1:hover{
+    cursor:pointer;
+    text-decoration:underline;
+ }
+ */
+
 /* 会动的线 */
-#d1 .dou_xian{
+.x_x_x{
+    position: relative;  
+}
+.x_x_x .list_list_top .dou_xian{
     width:1000px;
     height:1px;
     background:#000;
     margin:40px 0;
-    position: relative;
-    
+    position: absolute;
+    top:77%;
+    left:0%;
 }
-/* #d1 .list_list_1 h2:hover .dou_xian>div{
-left:10% !important;
-}
- #d1 .dou_xian>div{
+/* .x_x_x .list_list_top>.list_list_3>span>h2:hover .x_x_x>.dou_xian>div{
+    position: absolute;
+    top:0px;
+    left:30% ;
+} */
+/* .list_list_top .list_list_1:hover{
+    cursor:pointer;
+    text-decoration:underline;
+ } */
+
+
+
+/* .x_x_x  .dou_d{
     width:40px;height:30px;
     background:url(../img/images/homepage/active.png) no-repeat ;
     position: absolute;
-    top:0px;
+    top:92%;
    
-} */
+    z-index: 10;
+}  */
 
+.x_x_x .list_list_2:hover .dou_d{
+    width:40px;height:30px;
+    background:url(../img/images/homepage/active.png) no-repeat ;
+    position: absolute;
+    top:92%;
+    left:34%;
+    z-index: 10;
+   
+}
+.x_x_x .list_list_3:hover .dou_d{
+    width:40px;height:30px;
+    background:url(../img/images/homepage/active.png) no-repeat ;
+    position: absolute;
+    top:92%;
+    left:60%;
+    z-index: 10;
+    
+}
+
+
+ /* .x_x_x .list_list_2:hover .dou_d{
+    cursor:pointer;
+    text-decoration:underline;
+    position: absolute;
+    top:0px;
+    left:50% ;
+ } */
 
 
 
