@@ -452,47 +452,58 @@ margin-top:50px;
     top:77%;
     left:0%;
 }
-
-
-.x_x_x .list_list_1:hover .dou_d{
+.x_x_x .list_list_top>div div:hover{
     width:40px;height:30px;
     background:url(../img/images/homepage/active.png) no-repeat ;
+    position: absolute;
+    top:92%;
+    left:0%;
+    z-index: 10;
+
+}
+
+
+
+.x_x_x .list_list_1:hover .list_list_1 .dou_d{
+    /* width:40px;height:30px;
+    background:url(../img/images/homepage/active.png) no-repeat ; */
     position: absolute;
     top:92%;
     left:10%;
-    z-index: 10;
-    transition:all 5s;
+    /* z-index: 10;
+    transition:all 5s; */
    
 }
 
 
 
 
-.x_x_x .list_list_2:hover .dou_d{
-    width:40px;height:30px;
-    background:url(../img/images/homepage/active.png) no-repeat ;
+.x_x_x .list_list_2:hover .list_list_2 .dou_d{
+    /* width:40px;height:30px;
+    background:url(../img/images/homepage/active.png) no-repeat ; */
     position: absolute;
     top:92%;
     left:35%;
-    z-index: 10;
+    /* z-index: 10; */
+    
    
 }
 .x_x_x .list_list_3:hover .dou_d{
-    width:40px;height:30px;
-    background:url(../img/images/homepage/active.png) no-repeat ;
+    /* width:40px;height:30px;
+    background:url(../img/images/homepage/active.png) no-repeat ; */
     position: absolute;
     top:92%;
     left:60%;
-    z-index: 10;
+    /* z-index: 10; */
     
 }
 .x_x_x .list_list_4:hover .dou_d{
-    width:40px;height:30px;
-    background:url(../img/images/homepage/active.png) no-repeat ;
+    /* width:40px;height:30px;
+    background:url(../img/images/homepage/active.png) no-repeat ; */
     position: absolute;
     top:92%;
     left:85%;
-    z-index: 10;
+    /* z-index: 10; */
     
 }
 
