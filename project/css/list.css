@@ -59,6 +59,36 @@
     padding:0 15px 0 18px;
 }
 /* 左边导航栏字体 */
+
+
+li span{
+	padding-left: 20px;
+	cursor: pointer;
+  background: url("../img\xiaotubiao\plus.png") no-repeat center right;
+}
+li ul{
+	/* height:0;
+	overflow:hidden;
+	transition:height 0.5s linear; */
+	display: none;
+ }
+.open{
+    background: url("../img\xiaotubiao\minus.png") no-repeat center right;
+    }
+.open+ul{
+	 display: block;
+	 /* height:106px; */
+	 }
+/* .list_left_dao.tree */
+
+
+
+
+
+
+
+
+
 .list_left_li>li{
 margin:12px 22px 0px 12px;
 padding:7px 5px;
@@ -66,6 +96,18 @@ font-weight:bold ;
 font-size:21px;
 color:#333333;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 /* 主体商品部分 */
 
 .list_center_top{

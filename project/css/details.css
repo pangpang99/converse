@@ -206,7 +206,7 @@
     content:"";
     width:10px;
     height:10px;
-    background-image:url("./img/images/commons/detail.png") #fff no-repeat 10% 10%; 
+    background-image:url("./img/images/commons/detail.png") #fff no-repeat 10% 10%;  
 } */
 .xq_r_bottom a:hover{
     filter:alpha(Opaciy=60);

@@ -1,10 +1,10 @@
 //登录注册
 
-$(document).ready(function(){
-    $(".deng").click(function(){
-      $(".zhuce").fadeToggle();
-    });
-  });
+// $(document).ready(function(){
+//     $(".deng").click(function(){
+//       $(".zhuce").fadeToggle();
+//     });
+//   });
 //   $(document).ready(function(){
 //     $(".zhu").click(function(){
 //       $(".denglv").fadeToggle();
